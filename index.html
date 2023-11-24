@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube clone</title>
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/header.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header__title">
+          <button>&#9776;</button>
+          <span>YouTube Clone</span>
+        </div>
+        <form class="header__search" onsubmit="alert('Search!')">
+          <input placeholder="보고싶은 동영상" />
+          <button type="submit">검색</button>
+        </form>
+        <div class="header__hidden_search">
+          <button onclick="alert('Search!')">&#128269;</button>
+        </div>
+        <div class="header__profile">
+          <img src="./imgs/1.png" />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
