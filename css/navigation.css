@@ -1,0 +1,32 @@
+.nav {
+  float: left;
+  width: 200px;
+  height: calc(100vh - 64px);
+  background-color: #eee;
+  font-weight: bold;
+}
+.nav ul {
+  list-style-type: "❤";
+  padding: 1rem;
+}
+.nav li {
+  height: 3rem;
+  margin-left: 1.6rem;
+  padding-left: 0.8rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 400px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav {
+    width: 4rem;
+  }
+  .nav span {
+    display: none;
+  }
+}
