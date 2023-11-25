@@ -1,7 +1,8 @@
 .nav {
-  float: left;
+  position: fixed;
+  left: 0px;
   width: 200px;
-  height: calc(100vh - 64px);
+  height: 100vh;
   background-color: #eee;
   font-weight: bold;
 }
@@ -16,17 +17,17 @@
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 400px) {
-  .nav {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 800px) {
   .nav {
     width: 4rem;
   }
   .nav span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav {
     display: none;
   }
 }
